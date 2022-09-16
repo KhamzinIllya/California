@@ -1,0 +1,78 @@
+$main_font2: 'Readex Pro';
+$main_font: 'Inter' ;
+
+@mixin max-screen($res)
+{
+  @media screen and (max-width: $res)
+  {
+    @content;
+  }
+}
+
+footer{
+  padding-top: 44px;
+  .container_footer{
+    max-width: 1350px;
+    .footer_1{
+      h2{
+        font-family: "Readex Pro";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 70px;
+        color: #000000;
+      }
+      p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+      }
+    }
+    .footer_2{
+      ul{
+        list-style: none;
+        @include max-screen(820px){
+          padding-left: 10px;
+        }
+        @include max-screen(428px){
+          padding-left: 0;
+        }
+        li{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 22px;
+          color: #000000;
+          margin-top: 14px;
+          &:first-of-type{
+            font-family: 'Readex Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
+            color: #000000;
+            margin-top: unset;
+          }
+        }
+      }
+    }
+    .footer_bottom{
+      margin-top: 78px;
+      padding-top: 52px;
+      display: flex;
+      justify-content: space-between;
+      a{
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+      }
+    }
+  }
+}

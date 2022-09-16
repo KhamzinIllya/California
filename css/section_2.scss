@@ -1,0 +1,256 @@
+
+
+
+.third_banner{
+  padding-bottom: 28px;
+  background: #F5F5F5;
+  .container_third_banner{
+    max-width: 1294px;
+    .top_container_3{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 55px;
+      .top_container_3_inside {
+        max-width: 780px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          display: block;
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 42px;
+          line-height: 52px;
+          text-align: center;
+          color: #000000;
+          @include max-screen(428px){
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+
+        p {
+          display: block;
+          max-width: 628px;
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+          color: #000000;
+        }
+      }
+    }
+    .left_container_3{
+      @include max-screen(1024px){
+        padding-right: 200px;
+        padding-left: 200px;
+      }
+      @include max-screen(820px){
+        padding-right: 150px;
+        padding-left: 150px;
+      }
+      @include max-screen(768px){
+        padding-right: 100px;
+        padding-left: 100px;
+      }
+      @include max-screen(428px){
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .left_container_content_3_1{
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;
+        border-radius: 32px;
+        align-content: flex-end;
+        position: relative;
+        padding-bottom: 95px;
+        padding-left: 42px;
+        @include max-screen(428px){
+          padding-left: 15px;
+        }
+        img{
+          max-height: 377px;
+          max-width: 500px;
+        }
+        div{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          max-width: 197px;
+          position: absolute;
+          right: 42px;
+          bottom: 0;
+          @include max-screen(428px){
+            right: 5px;
+            bottom: -4px;
+          }
+          h4{
+            display: inline-block;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            text-align: right;
+            color: #000000;
+          }
+          h2{
+            display: inline-block;
+            font-family: 'Readex Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: right;
+            color: #000000;
+            @include max-screen(428px){
+              font-size: 20px;
+              line-heigth: 24px;
+            }
+          }
+        }
+      }
+      .left_container_content_3_2{
+        display: flex;
+        background: #FFFFFF;
+        border-radius: 32px;
+        margin-top: 120px;
+        position: relative;
+        padding-right: 216px;
+        @include max-screen(1024px){
+          margin-top: 25px;
+        }
+        img{
+          @include max-screen(428px){
+            max-width: 160px;
+            padding-left: 19px;
+          }
+        }
+        div{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: absolute;
+          right: 42px;
+          bottom: 87px;
+          @include max-screen(428px){
+            right: 14px;
+            bottom: -10px;
+          }
+          h4{
+            display: inline-block;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            text-align: right;
+            color: #000000;
+          }
+          h2{
+            display: inline-block;
+            font-family: 'Readex Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: right;
+            color: #000000;
+            max-width: 128px;
+            @include max-screen(428px){
+              font-size: 20px;
+              line-heigth: 24px;
+            }
+          }
+        }
+      }
+    }
+      .right_container_3_1 {
+        background: #FFFFFF;
+        border-radius: 32px;
+        padding-top: 144px;
+        padding-bottom: 144px;
+        justify-content: center;
+        padding-right: 0px;
+        @include max-screen(1024px){
+          display: none;
+        }
+        img{
+          max-width: 293px;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-right: 15px;
+          h4 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            text-align: center;
+            color: #000000;
+            margin-top: 41px;
+          }
+
+          h2 {
+            font-family: 'Readex Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 42px;
+          }
+        }
+      }
+
+      .right_container_3_2 {
+        background: #FFFFFF;
+        border-radius: 32px;
+        padding-top: 144px;
+        padding-bottom: 124px;
+        padding-left: 0px;
+        @include max-screen(1024px){
+          display: none;
+        }
+        img{
+          max-width: 293px;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 15px;
+
+          h4 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            text-align: center;
+            color: #000000;
+          }
+
+          h2 {
+            font-family: 'Readex Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 42px;
+          }
+        }
+      }
+  }
+}

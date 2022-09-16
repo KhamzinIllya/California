@@ -1,0 +1,110 @@
+$main_font2: 'Readex Pro';
+$main_font: 'Inter' ;
+
+@mixin max-screen($res)
+{
+  @media screen and (max-width: $res)
+  {
+    @content;
+  }
+}
+
+.forth_container{
+  padding-top: 78px;
+  .container_forth_banner{
+    max-width: 1294px;
+    .top_container_4{
+      display: flex;
+      justify-content: center;
+      .top_container_4_inside{
+        max-width: 642px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 59px;
+        h2{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 42px;
+          line-height: 52px;
+          text-align: center;
+          color: #000000;
+          @include max-screen(428px){
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+        p{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 17px;
+          text-align: center;
+          color: #000000;
+        }
+      }
+    }
+    .item_container_4{
+      img{
+        @include max-screen(1024px){
+          max-width: 230px;
+        }
+      }
+      @include max-screen(820px){
+        padding-left: 85px;
+      }
+      @include max-screen(768px){
+        padding-left: 55px;
+      }
+      @include max-screen(428px){
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .content_4{
+        align-content: flex-end;
+        margin-top: 37px;
+        padding-bottom: 47px;
+        h3{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 28px;
+          color: #000000;
+        }
+        p{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #4B4B4B;
+          max-width: 261px;
+        }
+        .cost{
+          position: absolute;
+          left: 12px;
+          bottom: 0;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: #000000;
+          @include max-screen(820px){
+            left: unset;
+            right: 12px;
+          }
+          @include max-screen(428px){
+            right: 83px;
+          }
+        }
+      }
+    }
+  }
+}

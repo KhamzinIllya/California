@@ -1,0 +1,128 @@
+$main_font2: 'Readex Pro';
+$main_font: 'Inter' ;
+
+@mixin max-screen($res)
+{
+  @media screen and (max-width: $res)
+  {
+    @content;
+  }
+}
+
+.sixth_container{
+  padding-top: 47px;
+  padding-bottom: 24px;
+  .container_sixth_banner{
+    max-width: 1294px;
+    .top_container_6{
+      display: flex;
+      justify-content: center;
+      .top_container_inside_6{
+        max-width: 497px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 56px;
+        h2{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 42px;
+          line-height: 52px;
+          text-align: center;
+          color: #000000;
+          @include max-screen(428px){
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+        p{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 17px;
+          text-align: center;
+          color: #000000;
+        }
+      }
+    }
+    .photo_6{
+      @include max-screen(1024px){
+        padding-left: 200px;
+        padding-right: 200px;
+      }
+      @include max-screen(820px){
+        padding-left: 105px;
+        padding-right: 15px;
+      }
+      @include max-screen(768px){
+        padding-left: 70px;
+        padding-right: 15px;
+      }
+      @include max-screen(428px){
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      img{
+        @include max-screen(428px){
+          max-width: 250px;
+        }
+      }
+    }
+    .text_6{
+      @include max-screen(1024px){
+        padding-left: 225px;
+        padding-right: 200px;
+        margin-top: 25px;
+      }
+      @include max-screen(820px){
+        padding-left: 120px;
+        padding-right: 15px;
+      }
+      @include max-screen(768px){
+        padding-left: 90px;
+        padding-right: 15px;
+      }
+      @include max-screen(768px){
+         padding-left: 15px;
+         padding-right: 15px;
+       }
+      p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+        color: #000000;
+        max-width: 569px;
+        @include max-screen(428px){
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+    .bottom_container_6{
+      justify-content: center;
+      display: flex;
+      padding-top: 73px;
+      a{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: capitalize;
+        color: #000000;
+        &:after{
+          content: "\f14c";
+          font-weight: 900;
+          font-family: "Font Awesome 6 Free";
+          color: black;
+          font-size: 24px;
+          margin-left: 5px;
+
+        }
+      }
+    }
+  }
+}

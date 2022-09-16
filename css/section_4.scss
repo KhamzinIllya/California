@@ -1,0 +1,123 @@
+$main_font2: 'Readex Pro';
+$main_font: 'Inter' ;
+
+@mixin max-screen($res)
+{
+  @media screen and (max-width: $res)
+  {
+    @content;
+  }
+}
+
+.fifth_container{
+  background: #FFFFFF;
+  padding-top: 74px;
+  padding-bottom: 28px;
+  .container_fifth_banner{
+    max-width: 1294px;
+    .top_container_5{
+      display: flex;
+      justify-content: center;
+      .top_container_inside_5{
+        max-width: 529px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 56px;
+        h2{
+          display: block;
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 42px;
+          line-height: 52px;
+          text-align: center;
+          color: #000000;
+          @include max-screen(428px){
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+        p{
+          display: block;
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 17px;
+          color: #000000;
+          text-align: center;
+        }
+      }
+    }
+    .item_container_5{
+      @include max-screen(820px){
+        display: flex;
+        justify-content: center;
+      }
+      .content_5{
+        padding-top: 41px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #F8F9FA;
+        border-radius: 16px;
+        @include max-screen(820px){
+          margin-top: 25px;
+        }
+        p{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 17px;
+          text-align: center;
+          color: #000000;
+        }
+        h3{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 35px;
+          text-align: center;
+          color: #000000;
+        }
+        .button_container_5{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          text-align: center;
+          text-transform: capitalize;
+          color: #000000;
+          border: 1px solid #000000;
+          border-radius: 200px;
+          padding: 12px 63px 12px 63px;
+          background: #FFFFFF;
+        }
+      }
+      img{
+        margin-top: 30px;
+        @include max-screen(428px){
+          max-width: 250px;
+        }
+      }
+      a{
+        padding-bottom: 10px;
+        @include max-screen(1024px){
+          padding-top: 10px;
+        }
+        img{
+          max-width: 340px;
+          @include max-screen(1024px){
+            max-width: 320px;
+          }
+          @include max-screen(428px){
+            max-width: 250px;
+          }
+        }
+      }
+    }
+  }
+}

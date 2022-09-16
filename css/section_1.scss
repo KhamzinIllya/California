@@ -1,0 +1,76 @@
+$main_font2: 'Readex Pro';
+$main_font: 'Inter' ;
+
+@mixin max-screen($res)
+{
+  @media screen and (max-width: $res)
+  {
+    @content;
+  }
+}
+
+.second_banner {
+  padding: 28px 73px 109px 73px;
+  @include max-screen(428px){
+    padding: 28px 15px 109px 15px;
+  }
+  .container_second_banner {
+    max-width: 1294px;
+    background: #DCE5E2;
+    border-radius: 32px;
+    padding-left: 56px;
+    img{
+      @include max-screen(1024px){
+        display: none;
+        padding-bottom: 34px;
+      }
+    }
+    .container_2_left {
+      margin-top: 145px;
+      @include max-screen(1024px){
+        margin-top: 45px;
+        margin-bottom: 55px;
+        padding-right: 56px;
+      }
+
+      h1 {
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 70px;
+        color: #000000;
+        @include max-screen(428px){
+          font-size: 20px;
+          line-height: 20px;
+        }
+
+      }
+
+      p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+      }
+
+      .button_carusel {
+        border: 1px solid #000000;
+        border-radius: 200px;
+        padding: 12px 53px 12px 53px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #000000;
+        @include max-screen(428px){
+          padding: 6px 15px 6px 15px;
+        }
+      }
+    }
+  }
+}

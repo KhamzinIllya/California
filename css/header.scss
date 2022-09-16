@@ -1,0 +1,118 @@
+$main_font2: 'Readex Pro';
+$main_font: 'Inter' ;
+
+@mixin max-screen($res)
+{
+  @media screen and (max-width: $res)
+  {
+    @content;
+  }
+}
+
+
+header{
+  background: #FFFFFF;
+    .menu {
+      margin: auto;
+      background: #FFFFFF;
+      max-width: 1294px;
+      .logo {
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 70px;
+        color: black;
+        @include max-screen(820px){
+          font-size: 20px;
+        }
+      }
+
+      .list_of_itames {
+        display: flex;
+        justify-content: space-between;
+        @include max-screen(1000px){
+          margin-left: unset;
+        }
+        .icon_1 {
+          transform-style: unset;
+          text-decoration: none;
+          margin-left: 200px;
+          @include max-screen(1000px){
+            margin-left: unset;
+          }
+          &:before {
+            content: "\f002";
+            font-size: 20px;
+            font-weight: 600;
+            font-family: "Font Awesome 6 Free";
+            color: black;
+          }
+        }
+
+        .icon_2 {
+          transform-style: unset;
+          margin-left: 5px;
+          text-decoration: none;
+          @include max-screen(1000px){
+            margin-left: unset;
+          }
+          &:before {
+            content: "\f07a";
+            font-size: 20px;
+            font-weight: 600;
+            font-family: "Font Awesome 6 Free";
+            color: black;
+            margin-top: 10px;
+          }
+        }
+
+        li {
+          margin-left: 33px;
+          &:last-of-type{
+            margin-left: 5px;
+          }
+          @include max-screen(1000px){
+            margin-left: unset;
+          }
+          a {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+            color: #000000;
+          }
+        }
+      }
+
+    }
+  }
+
+.navbar-toggler-icon{
+  &:before{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Font Awesome 6 Free";
+    color: black;
+    content: "\f0c9";
+  }
+}
+
+.navbar-expand-lg .navbar-collapse{
+  justify-content: flex-end;
+}
+/*.main_menu{
+  a{
+    font-family: $main_font2;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 70px;
+    color: #000000;
+    @include max-screen(428px){
+      font-size: 25px;
+    }
+
+  }*/

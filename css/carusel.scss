@@ -1,0 +1,78 @@
+
+.owl-nav{
+  .owl-prev {
+    position: absolute;
+    left: -35px;
+    top: 263px;
+    @include max-screen(1024px){
+      left: -40;
+      top: 163px;
+    }
+    &:before {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      content: "\f053";
+      color: black;
+      font-size: 30px;
+    }
+  }
+  .owl-next {
+    position: absolute;
+    right: 10px;
+    top: 263px;
+    @include max-screen(1024px){
+      right: -5px;
+      top: 163px;
+    }
+    &:before {
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      content: "\f054";
+      color: black;
+      font-size: 30px;
+    }
+  }
+}
+
+.owl-dots{
+  position: absolute;
+  bottom: 34px;
+  left: 243px;
+  @include max-screen(1024px){
+    left: 183px;
+  }
+  @include max-screen(992px){
+    left: 163px;
+  }
+  @include max-screen(820px){
+    left: 63px;
+  }
+  @include max-screen(768px){
+    left: 33px;
+  }
+  @include max-screen(428px){
+    left: -16px;
+    bottom: 14px;
+  }
+  span{
+    display: inline-block;
+    background: black;
+    width: 194px;
+    height: 2px;
+    margin-left: 34px;
+    @include max-screen(1024px){
+      width: 100px;
+    }
+    @include max-screen(1024px){
+      width: 10px;
+    }
+    &:active{
+      background: #FFFFFF;
+    }
+  }
+}
+
+.owl-dots .active span{
+  background: #FFFFFF;
+}
+

@@ -1,0 +1,181 @@
+$main_font2: 'Readex Pro';
+$main_font: 'Inter' ;
+
+@mixin max-screen($res)
+{
+  @media screen and (max-width: $res)
+  {
+    @content;
+  }
+}
+
+.seventh_banner{
+  .container_seventh_banner{
+    max-width: 935px;
+    .top_container_7{
+      display: flex;
+      justify-content: center;
+      .top_container_7_inside{
+        display: flex;
+        flex-direction: column;
+        max-width: 650px;
+        align-content: center;
+        justify-content: center;
+        h2{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 42px;
+          line-height: 52px;
+          text-align: center;
+          color: #000000;
+          display: block;
+          @include max-screen(428px){
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+        .list_7 {
+          margin-top: 18px;
+          ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-content: center;
+            padding-left: 0px;
+            @include max-screen(428px){
+              flex-wrap: wrap;
+            }
+            li {
+              padding: 6px 22px 6px 22px;
+              background: #FFFFFF;
+              border: 1px solid #C5C5C5;
+              border-radius: 200px;
+              margin-left: 7px ;
+              &:first-child{
+                margin: unset ;
+              }
+            }
+          }
+        }
+        .form_7{
+          margin-top: 24px;
+          background: #F8F9FA;
+          border-radius: 100px;
+          width: 100%;
+          @include max-screen(428px){
+            width: unset;
+            padding-left: 15px;
+          }
+          button{
+            font-size: 20px;
+            outline: none;
+            border: none;
+            background: #F8F9FA;
+            &:before{
+              content: '\f002';
+              font-weight: 600;
+              font-family: "Font Awesome 6 Free";
+              size: 30px;
+              color: black;
+            }
+          }
+          input{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-right: 63px;
+            border: transparent;
+            outline: none;
+            background: #F8F9FA;
+            @include max-screen(820px){
+              padding-right: 0;
+            }
+            &:placeholder{
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 17px;
+              text-align: center;
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+    .bottom_container_7{
+      background: #DCE5E2;
+      border-radius: 16px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      margin-top: 68px;
+      .bottom_container_7_inside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 47px;
+        padding-bottom: 43px;
+        h2{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 42px;
+          line-height: 52px;
+          text-align: center;
+          color: #000000;
+          @include max-screen(428px){
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+        p{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+          color: #000000;
+        }
+        .form_7_second{
+          width: 80%;
+          background: #DCE5E2;
+          border: 1px solid #000000;
+          border-radius:54px;
+          padding: 10px 0 10px 33px;
+          position: relative;
+          input{
+            border: transparent;
+            outline: none;
+            background: #DCE5E2;
+          }
+          button{
+            outline: none;
+            border: none;
+            background: #000000;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 0px 200px 200px 0px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #FFFFFF;
+            padding-right: 33px;
+            padding-left: 33px;
+            @include max-screen(428px){
+              padding-right: 10px;
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
