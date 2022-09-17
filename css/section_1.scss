@@ -40,6 +40,7 @@ $main_font: 'Inter' ;
         font-size: 58px;
         line-height: 70px;
         color: #000000;
+        max-width: 588px;
         @include max-screen(428px){
           font-size: 20px;
           line-height: 20px;

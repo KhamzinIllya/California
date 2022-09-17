@@ -260,6 +260,7 @@ header .menu .list_of_itames li a {
   font-size: 58px;
   line-height: 70px;
   color: #000000;
+  max-width: 588px;
 }
 @media screen and (max-width: 428px) {
   .second_banner .container_second_banner .container_2_left h1 {
@@ -864,6 +865,8 @@ header .menu .list_of_itames li a {
   .sixth_container .container_sixth_banner .photo_6 {
     padding-right: 15px;
     padding-left: 15px;
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 428px) {
@@ -894,6 +897,12 @@ header .menu .list_of_itames li a {
   .sixth_container .container_sixth_banner .text_6 {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .sixth_container .container_sixth_banner .text_6 {
+    display: flex;
+    justify-content: center;
   }
 }
 .sixth_container .container_sixth_banner .text_6 p {
