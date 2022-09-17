@@ -23,6 +23,7 @@ header{
         font-size: 35px;
         line-height: 70px;
         color: black;
+        margin-right: 10px;
         @include max-screen(820px){
           font-size: 20px;
         }

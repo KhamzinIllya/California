@@ -55,6 +55,10 @@ $main_font: 'Inter' ;
               &:first-child{
                 margin: unset ;
               }
+              a{
+                text-decoration: none;
+                color: black;
+              }
             }
           }
         }

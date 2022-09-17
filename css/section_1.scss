@@ -11,6 +11,7 @@ $main_font: 'Inter' ;
 
 .second_banner {
   padding: 28px 73px 109px 73px;
+  background: #F5F5F5;
   @include max-screen(428px){
     padding: 28px 15px 109px 15px;
   }
@@ -18,7 +19,7 @@ $main_font: 'Inter' ;
     max-width: 1294px;
     background: #DCE5E2;
     border-radius: 32px;
-    padding-left: 56px;
+    padding-left: 71px;
     img{
       @include max-screen(1024px){
         display: none;
@@ -27,6 +28,7 @@ $main_font: 'Inter' ;
     }
     .container_2_left {
       margin-top: 145px;
+      max-width: 588px;
       @include max-screen(1024px){
         margin-top: 45px;
         margin-bottom: 55px;
@@ -55,6 +57,7 @@ $main_font: 'Inter' ;
         font-size: 16px;
         line-height: 19px;
         color: #000000;
+        max-width: 588px;
       }
 
       .button_carusel {

@@ -118,8 +118,8 @@ $main_font: 'Inter' ;
         font-weight: 400;
         font-size: 24px;
         line-height: 29px;
-        text-transform: capitalize;
         color: #000000;
+        text-decoration: none;
         &:after{
           content: "\f14c";
           font-weight: 900;
