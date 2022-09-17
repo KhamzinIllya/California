@@ -21,6 +21,9 @@ $main_font: 'Inter' ;
     border-radius: 32px;
     padding-left: 71px;
     img{
+      @include max-screen(1300px){
+        display: none;
+      }
       @include max-screen(1024px){
         display: none;
         padding-bottom: 34px;
@@ -71,8 +74,13 @@ $main_font: 'Inter' ;
         line-height: 22px;
         text-transform: capitalize;
         color: #000000;
+        @include max-screen(1300px){
+          padding: 6px 15px 6px 15px;
+          margin-bottom: 70px;
+        }
         @include max-screen(428px){
           padding: 6px 15px 6px 15px;
+          margin-bottom: unset;
         }
       }
     }
